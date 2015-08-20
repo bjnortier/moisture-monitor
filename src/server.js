@@ -20,9 +20,13 @@ http.listen(3000, function() {
   console.log('listening on *:3000');
 });
 
+// var p = child_process.spawn(
+//   'ssh',
+//   ['pi@192.168.0.3', 'python /home/pi/moisture-monitor/script/read_values.py'], 
+//   {});
 var p = child_process.spawn(
-  'ssh',
-  ['pi@192.168.0.3', 'python /home/pi/moisture-monitor/read_values.py'], 
+  'python',
+  ['/home/pi/moisture-monitor/script/read_values.py'], 
   {});
 
 p.stdout.on('data', function (data) {

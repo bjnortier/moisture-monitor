@@ -2,6 +2,7 @@ import json
 import mcp3008
 from time import sleep
 import os
+import sys
 
 out = os.fdopen(sys.stdout.fileno(), 'w', 1)
 while True:
