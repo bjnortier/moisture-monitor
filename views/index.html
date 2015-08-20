@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 13px Helvetica, Arial; }
+      #chart0 { top: 0; }
+      #chart1 { top: 33%; }
+      #chart2 { top: 66%; }
+      .chart { position: absolute; left: 0; right: 0; height: 33%;}
+    </style>
+    <link href="/static/c3.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="chart0" class="chart"></div>
+    <div id="chart1" class="chart"></div>
+    <div id="chart2" class="chart"></div>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/bundles/app.bundle.js"></script>
+  </body>
+</html>
